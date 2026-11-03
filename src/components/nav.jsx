@@ -4,13 +4,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { SITE, NAV } from "../data/site.js";
 import { lockScroll, unlockScroll } from "../lib/lenis.jsx";
 import Photo from "./Photo.jsx";
+import Mark from "./Mark.jsx";
 
 export const Topbar = forwardRef(function Topbar({ onMenu, menuOpen }, ref) {
   return (
     <header className="fixed top-0 inset-x-0 z-40 mix-blend-difference text-bone pointer-events-none">
       <div className="flex items-center justify-between px-5 md:px-10 py-4 pointer-events-auto">
         <Link to="/" className="flex items-center gap-3" aria-label="Square Inch Design — home">
-          <span className="h-4 w-4 bg-accent inline-block" aria-hidden="true" />
+          <Mark className="h-5 w-5 shrink-0" dark />
           <span className="text-sm tracking-[0.25em] font-medium">SQUARE INCH</span>
         </Link>
         <div className="flex items-center gap-6">

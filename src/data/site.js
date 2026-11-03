@@ -5,7 +5,7 @@ export const SITE = {
   city: "Pune · Satara",
   phones: ["98233 33400", "92843 96887"],
   email: "squareinchedesign@yahoo.com",
-  pune: "Plot No 11, Prabha Co-operative Housing Society, Mayur Colony, Paud Road, Pune 411038.",
+  pune: "Flat No. A1-4, Damodare Villa, Opp. Lothrud Stand, Near Karve Statue, Kothrud, Pune, Maharashtra 411038.",
   satara: "'Parijat', 509 A Camp, Satara.",
   lead: "Siddharth Kolhapure",
   // WhatsApp number in full international format WITHOUT "+" (e.g. "919823333400").

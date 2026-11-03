@@ -3,6 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { motion, useScroll } from "framer-motion";
 import Photo from "../components/Photo.jsx";
 import Footer from "../components/Footer.jsx";
+import Mark from "../components/Mark.jsx";
 import { RevealMask } from "../components/motion.jsx";
 import { SITE, PROCESS, WORLDS, STORIES, TEAM, VOICES } from "../data/site.js";
 import { submitEnquiry, validateEnquiry, enquirySummary, STAGES } from "../lib/enquiry.js";
@@ -18,12 +19,8 @@ export function Studio() {
             <span className="block italic text-[#E76B46]">Square Inch</span>
             <span className="block italic text-[#E76B46]">Design.</span>
           </h1>
-          <div className="relative mt-8 w-full max-w-[300px]">
-            <svg viewBox="0 0 300 200" className="block h-auto w-full" role="img" aria-label="Square Inch mark — red square with inch marks">
-              <rect x="8" y="8" width="184" height="184" fill="#F0442E" />
-              <polygon points="222,8 252,8 226,86 196,86" fill="#F0442E" />
-              <polygon points="262,8 292,8 266,86 236,86" fill="#F0442E" />
-            </svg>
+          <div className="relative mt-8 w-full max-w-[220px]">
+            <Mark className="block h-auto w-full" accentColor="#F0442E" letterColor="#1F2C46" />
           </div>
         </div>
         <div className="md:col-span-8 md:border-l md:border-[#1F2C46]/15 md:pl-10">

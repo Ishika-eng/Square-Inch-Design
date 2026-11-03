@@ -6,6 +6,7 @@ import InchLens from "../components/InchLens.jsx";
 import Spotlight from "../components/Spotlight.jsx";
 import StoriesScroll from "../components/StoriesScroll.jsx";
 import Footer from "../components/Footer.jsx";
+import Mark from "../components/Mark.jsx";
 import { Cinematic, RevealMask } from "../components/motion.jsx";
 import { PROCESS, WORLDS } from "../data/site.js";
 
@@ -47,7 +48,7 @@ function Hero() {
       {!done && (
         <motion.div onAnimationComplete={finish} initial={{ opacity: 1 }} animate={{ opacity: 0 }} transition={{ delay: 0.45, duration: 0.4 }} className="absolute inset-0 z-50 bg-ink flex items-center justify-center">
           <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.45, ease: "easeInOut" }} className="flex items-center gap-3 origin-left">
-            <span className="h-6 w-6 bg-accent inline-block" />
+            <Mark className="h-7 w-7 shrink-0" dark />
             <span className="tracking-[0.4em] text-sm text-bone">SQUARE INCH</span>
           </motion.div>
         </motion.div>
