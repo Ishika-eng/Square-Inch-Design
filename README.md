@@ -2,6 +2,8 @@
 
 Image-first exhibition site for the interior design studio (Pune & Satara)...
 
+**Live:** https://square-interior-2.vercel.app/
+
 ## Run
 
 ```
