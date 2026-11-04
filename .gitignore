@@ -24,3 +24,5 @@ yolov8n.pt
 *.njsproj
 *.sln
 *.sw?
+
+.vercel
