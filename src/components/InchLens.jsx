@@ -13,8 +13,8 @@ export default function InchLens() {
   const ref = useRef(null);
   const [pos, setPos] = useState({ x: 50, y: 50 });
   const [box, setBox] = useState({ t: 28, r: 68, b: 72, l: 32 });
-  const [active, setActive] = useState(5);
-  const [shown, setShown] = useState([5]);
+  const [active, setActive] = useState(0);
+  const [shown, setShown] = useState([0]);
   const [explored, setExplored] = useState(false);
 
   // Keep the previous world mounted through the crossfade, then drop it.
