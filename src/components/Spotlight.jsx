@@ -37,7 +37,7 @@ export default function Spotlight({ kicker, slides, dark = true, titleClass = "t
 
   const s = slides[i];
   return (
-    <div ref={frameRef} onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onFocus={() => setPaused(true)} onBlur={() => setPaused(false)} className={`relative h-[86svh] md:h-[92svh] overflow-hidden ${dark ? "bg-night text-bone" : "bg-ink text-bone"}`}>
+    <div ref={frameRef} className={`relative h-[86svh] md:h-[92svh] overflow-hidden ${dark ? "bg-night text-bone" : "bg-ink text-bone"}`}>
       <AnimatePresence mode="popLayout">
         <motion.div key={i} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.9 }} className="absolute inset-0">
           <motion.div initial={{ scale: reduce ? 1 : 1.08 }} animate={{ scale: 1 }} transition={{ duration: 4, ease: "linear" }} className="h-full">
