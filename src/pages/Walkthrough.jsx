@@ -75,18 +75,10 @@ function Hero() {
         {/* beige panel — only the lockup sits on orange */}
         <div aria-hidden="true" className="absolute inset-0 bg-sand" />
         <div className="relative">
-          <motion.img
-            src="/brand-logo.png"
-            alt="Square Inch Design"
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: quick ? 0 : 0.5, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="h-14 md:h-16 w-auto mb-6 md:mb-8"
-          />
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: quick ? 0 : 0.65, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ delay: quick ? 0 : 0.5, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="flex items-center gap-3 text-[11px] md:text-xs tracking-[0.22em] uppercase text-ink font-semibold"
           >
             <span aria-hidden="true" className="h-2.5 w-2.5 bg-ink inline-block shrink-0 mt-1.5" />
@@ -98,44 +90,14 @@ function Hero() {
           <motion.div
             initial={{ opacity: 0, scale: 0.96, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ delay: quick ? 0 : 0.55, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="relative w-fit max-w-full mt-12 md:mt-16 bg-accent px-7 py-8 md:px-10 md:py-10"
+            transition={{ delay: quick ? 0 : 0.6, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-12 md:mt-16"
           >
-            <div aria-hidden="true" className="absolute -top-8 md:-top-10 right-3 md:right-4 flex gap-2 pointer-events-none">
-              <span className="block w-2.5 h-10 md:w-3 md:h-12 bg-ink -skew-x-[18deg]" />
-              <span className="block w-2.5 h-10 md:w-3 md:h-12 bg-ink -skew-x-[18deg]" />
-            </div>
-            <div aria-hidden="true" className="absolute -bottom-8 md:-bottom-10 left-3 md:left-4 flex gap-2 pointer-events-none">
-              <span className="block w-2.5 h-10 md:w-3 md:h-12 bg-ink -skew-x-[18deg]" />
-              <span className="block w-2.5 h-10 md:w-3 md:h-12 bg-ink -skew-x-[18deg]" />
-            </div>
-            <h1 aria-label="Every Inch Speaks." className="display text-bone leading-[1.02] text-[15vw] md:text-[4.4vw]">
-            <span aria-hidden="true">
-              <motion.span
-                initial={{ opacity: 0, y: 34 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: quick ? 0 : 0.75, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-                className="block font-light"
-              >
-                Every
-              </motion.span>
-              <motion.span
-                initial={{ opacity: 0, y: 34 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: quick ? 0 : 0.85, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-                className="block font-light italic text-ink"
-              >
-                Inch
-              </motion.span>
-              <motion.span
-                initial={{ opacity: 0, y: 34 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: quick ? 0 : 0.95, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-                className="block font-light"
-              >
-                Speaks.
-              </motion.span>
-            </span>
+            <img src="/brand-logo.png" alt="Square Inch Design" className="h-24 md:h-32 w-auto" />
+            <h1 aria-label="Every Inch Speaks." className="display text-ink leading-[0.95] text-[13vw] md:text-[3.6vw] mt-6">
+              <span className="font-light">Every </span>
+              <span className="font-light italic text-accent">Inch</span>
+              <span className="font-light"> Speaks.</span>
             </h1>
           </motion.div>
         </div>
