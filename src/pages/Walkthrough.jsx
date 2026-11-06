@@ -93,7 +93,7 @@ function Hero() {
             transition={{ delay: quick ? 0 : 0.6, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="mt-12 md:mt-16"
           >
-            <img src="/brand-logo.png" alt="Square Inch Design" className="h-24 md:h-32 w-auto" />
+            <img src="/brand-logo.png" alt="Square Inch Design" className="h-40 md:h-56 w-auto max-w-full" />
             <h1 aria-label="Every Inch Speaks." className="display text-ink leading-[0.95] text-[13vw] md:text-[3.6vw] mt-6">
               <span className="font-light">Every </span>
               <span className="font-light italic text-accent">Inch</span>
