@@ -26,3 +26,4 @@ yolov8n.pt
 *.sw?
 
 .vercel
+.env*
