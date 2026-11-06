@@ -3,7 +3,7 @@ export const SITE = {
   name: "Square Inch Design",
   concept: "Every Inch Speaks",
   city: "Pune · Satara",
-  phones: ["98233 33400", "92843 96887"],
+  phones: ["98233 33400", "93713 96925"],
   email: "squareinchedesign@yahoo.com",
   pune: "Flat No. A1-4, Damodare Villa, Opp. Lothrud Stand, Near Karve Statue, Kothrud, Pune, Maharashtra 411038.",
   satara: "'Parijat', 509 A Camp, Satara.",
