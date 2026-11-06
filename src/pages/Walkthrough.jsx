@@ -75,6 +75,14 @@ function Hero() {
         {/* beige panel — only the lockup sits on orange */}
         <div aria-hidden="true" className="absolute inset-0 bg-sand" />
         <div className="relative">
+          <motion.img
+            src="/brand-logo.png"
+            alt="Square Inch Design"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: quick ? 0 : 0.5, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            className="h-14 md:h-16 w-auto mb-6 md:mb-8"
+          />
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
