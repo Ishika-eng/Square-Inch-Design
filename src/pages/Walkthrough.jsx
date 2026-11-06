@@ -79,7 +79,7 @@ function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: quick ? 0 : 0.5, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="flex items-center gap-3 text-[11px] md:text-xs tracking-[0.22em] uppercase text-ink font-semibold"
+            className="self-start flex items-center gap-3 text-[11px] md:text-xs tracking-[0.22em] uppercase text-ink font-semibold text-left"
           >
             <span aria-hidden="true" className="h-2.5 w-2.5 bg-ink inline-block shrink-0 mt-1.5" />
             <span>
