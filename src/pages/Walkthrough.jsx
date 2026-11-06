@@ -6,7 +6,6 @@ import InchLens from "../components/InchLens.jsx";
 import Spotlight from "../components/Spotlight.jsx";
 import StoriesScroll from "../components/StoriesScroll.jsx";
 import Footer from "../components/Footer.jsx";
-import Mark from "../components/Mark.jsx";
 import { Cinematic, RevealMask } from "../components/motion.jsx";
 import { PROCESS, WORLDS } from "../data/site.js";
 
@@ -47,9 +46,9 @@ function Hero() {
       <div className="relative overflow-hidden rounded-[22px] md:rounded-[28px] grid md:grid-cols-[3fr_7fr] min-h-[calc(100svh-1.25rem)] sm:min-h-[calc(100svh-2rem)] md:min-h-[calc(100svh-2.5rem)] isolate border border-bone/10">
       {!done && (
         <motion.div onAnimationComplete={finish} initial={{ opacity: 1 }} animate={{ opacity: 0 }} transition={{ delay: 0.45, duration: 0.4 }} className="absolute inset-0 z-50 bg-ink flex items-center justify-center">
-          <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.45, ease: "easeInOut" }} className="flex items-center gap-3 origin-left">
-            <Mark className="h-7 w-7 shrink-0" dark />
-            <span className="tracking-[0.4em] text-sm text-bone">SQUARE INCH</span>
+          <motion.div initial={{ scale: 0.92, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.45, ease: "easeInOut" }} className="flex flex-col items-center gap-4">
+            <img src="/brand-logo.png" alt="Square Inch Design" className="h-20 w-auto md:h-28" />
+            <span className="tracking-[0.3em] text-xs md:text-sm text-bone/80">EVERY INCH SPEAKS</span>
           </motion.div>
         </motion.div>
       )}
