@@ -70,11 +70,11 @@ function Hero() {
       </div>
 
       {/* LEFT — ink editorial panel with a sculpted arc cutout (desktop) */}
-      <div className="relative z-20 flex flex-col justify-center px-6 md:px-12 pt-24 md:pt-28 pb-10 min-h-[70svh] md:min-h-auto">
+      <div className="relative z-20 flex flex-col items-center justify-center text-center px-6 md:px-12 pt-24 md:pt-28 pb-10 min-h-[70svh] md:min-h-auto">
         {/* panel background: solid on mobile, arc-cutout mask on desktop */}
         {/* beige panel — only the lockup sits on orange */}
         <div aria-hidden="true" className="absolute inset-0 bg-sand" />
-        <div className="relative">
+        <div className="relative flex flex-col items-center">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ function Hero() {
             initial={{ opacity: 0, scale: 0.96, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ delay: quick ? 0 : 0.6, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-12 md:mt-16"
+            className="mt-12 md:mt-16 flex flex-col items-center"
           >
             <img src="/brand-logo.png" alt="Square Inch Design" className="h-40 md:h-56 w-auto max-w-full" />
             <h1 aria-label="Every Inch Speaks." className="display text-ink leading-[0.95] text-[13vw] md:text-[3.6vw] mt-6">
@@ -106,13 +106,13 @@ function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: quick ? 0 : 1.1, duration: 0.7 }}
-          className="relative mt-8 md:mt-10 max-w-[340px]"
+          className="relative mt-8 md:mt-10 max-w-[340px] flex flex-col items-center"
         >
           <div aria-hidden="true" className="h-px w-full bg-ink/25" />
           <p className="mt-5 text-[13px] md:text-[15px] leading-relaxed text-ink/80">
             Twenty years of residential and commercial interiors — crafted across Pune and Satara, down to the last inch.
           </p>
-          <div className="mt-6 flex flex-wrap items-center gap-x-7 gap-y-4">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-7 gap-y-4">
             <Link to="/worlds" className="pointer-events-auto inline-flex items-center gap-3 border border-ink/50 px-6 py-3 text-[10px] md:text-xs tracking-[0.25em] uppercase text-ink transition-colors hover:bg-ink hover:text-bone">
               Explore the worlds
               <span aria-hidden="true">→</span>
