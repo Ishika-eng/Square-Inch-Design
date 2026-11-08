@@ -338,10 +338,19 @@ function StepIcon({ i, className = "" }) {
 
 function ProcessTease() {
   return (
-    <section data-room="4" data-room-label="How we build" className="bg-[#EEE7D6] text-ink px-5 md:px-10 py-12 md:py-16 border-t border-ink/10 overflow-hidden">
+    <section data-room="4" data-room-label="How we build" className="relative bg-[#EEE7D6] text-ink px-5 md:px-10 py-14 md:py-20 border-t-[3px] border-accent overflow-hidden">
+      {/* corner brackets — frames this room as the exhibition's centerpiece */}
+      <span aria-hidden="true" className="absolute top-5 left-5 md:top-7 md:left-10 h-5 w-5 border-l-2 border-t-2 border-accent" />
+      <span aria-hidden="true" className="absolute top-5 right-5 md:top-7 md:right-10 h-5 w-5 border-r-2 border-t-2 border-accent" />
+      <span aria-hidden="true" className="absolute bottom-5 left-5 md:bottom-7 md:left-10 h-5 w-5 border-l-2 border-b-2 border-accent" />
+      <span aria-hidden="true" className="absolute bottom-5 right-5 md:bottom-7 md:right-10 h-5 w-5 border-r-2 border-b-2 border-accent" />
+
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>
-          <p className="text-[10px] md:text-[11px] tracking-mega text-accent">ROOM 05 — HOW WE BUILD</p>
+          <p className="inline-flex items-center gap-2 text-[10px] md:text-[11px] tracking-mega text-accent font-semibold">
+            <span aria-hidden="true" className="h-2 w-2 bg-accent inline-block rotate-45" />
+            ROOM 05 — HOW WE BUILD
+          </p>
           <h2 className="display leading-[0.95] text-5xl md:text-6xl mt-3 text-[#161310]">
             <span className="font-medium">How we </span>
             <span className="font-medium italic text-accent">build.</span>
@@ -351,7 +360,7 @@ function ProcessTease() {
           <p className="text-sm md:text-[15px] leading-relaxed text-ink/60 max-w-xs">
             Six thoughtful steps that turn your vision into spaces that hold time.
           </p>
-          <Link to="/how-we-build" className="w-fit shrink-0 border border-ink/40 px-7 py-3 text-[10px] md:text-[11px] tracking-[0.25em] text-ink transition-colors hover:border-accent hover:text-accent">
+          <Link to="/how-we-build" className="w-fit shrink-0 border border-ink/40 px-7 py-3 text-[10px] md:text-[11px] tracking-[0.25em] text-ink transition-colors hover:border-accent hover:text-accent hover:bg-accent/5">
             FOLLOW THE LINE <span aria-hidden="true" className="ml-2">→</span>
           </Link>
         </div>
@@ -374,7 +383,7 @@ function ProcessTease() {
             const body = (
               <>
                 <span className="relative">
-                  <span aria-hidden="true" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-24 w-24 md:h-28 md:w-28 rounded-full bg-ink/[0.05]" />
+                  <span aria-hidden="true" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-24 w-24 md:h-28 md:w-28 rounded-full bg-ink/[0.05] border border-accent/25" />
                   <span aria-hidden="true" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-px w-24 md:w-32 bg-ink/20" />
                   <span aria-hidden="true" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-24 md:h-28 w-px bg-ink/20" />
                   <StepIcon i={i} className="relative" />
