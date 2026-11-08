@@ -39,7 +39,7 @@ function MenuCardIcon({ i, className = "" }) {
   const c = "h-8 w-8 md:h-9 md:w-9";
   const common = "fill-none stroke-current";
   const w = { strokeWidth: 1.8, strokeLinecap: "round", strokeLinejoin: "round" };
-  switch (i % 6) {
+  switch (i % 7) {
     case 0: // home
       return (
         <svg viewBox="0 0 32 32" className={`${c} ${className}`} aria-hidden="true">
@@ -74,7 +74,16 @@ function MenuCardIcon({ i, className = "" }) {
           <path d="M20.5 19.5 c3.8.4 6.5 3 6.5 6.5" className={common} {...w} />
         </svg>
       );
-    case 4: // process
+    case 4: // services
+      return (
+        <svg viewBox="0 0 32 32" className={`${c} ${className}`} aria-hidden="true">
+          <path d="M11 6 l4 4 l-2.5 2.5 l-4-4 Z" className={common} {...w} />
+          <path d="M12.5 11.5 L7 21 a2.2 2.2 0 0 0 3 3 L19.5 14.5" className={common} {...w} />
+          <path d="M18 13 l4-4 l2.5 2.5 l-4 4 Z" className={common} {...w} />
+          <circle cx="23" cy="9" r="1.4" className="fill-current text-current" stroke="none" />
+        </svg>
+      );
+    case 5: // process
       return (
         <svg viewBox="0 0 32 32" className={`${c} ${className}`} aria-hidden="true">
           <path d="M9 4 h9 l5 5 v19 h-14 Z" className={common} {...w} />
@@ -192,7 +201,7 @@ export function MenuOverlay({ open, close, triggerRef }) {
               </button>
             </div>
             <p className="sm:hidden mt-4 text-xs leading-relaxed text-bone/75">{SITE.pune}<br />{SITE.phones.join(" · ")}</p>
-            <nav aria-label="Primary" className="mt-auto pt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
+            <nav aria-label="Primary" className="mt-auto pt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3 md:gap-4">
               {NAV.map((item, i) => (
                 <MenuLink key={item.to + item.label} item={item} index={i} onNavigate={close} />
               ))}

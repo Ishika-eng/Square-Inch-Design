@@ -16,6 +16,7 @@ const StudioPage = lazy(() => import("./pages/More.jsx").then((m) => ({ default:
 const BuildPage = lazy(() => import("./pages/More.jsx").then((m) => ({ default: m.HowWeBuild })));
 const BeginPage = lazy(() => import("./pages/More.jsx").then((m) => ({ default: m.Begin })));
 const ProjectsPage = lazy(() => import("./pages/Projects.jsx"));
+const ServicesPage = lazy(() => import("./pages/Services.jsx"));
 
 function setMeta(selector, attr, value) {
   if (value == null) return;
@@ -258,6 +259,7 @@ function Shell() {
           <Route path="/world/:slug" element={<WorldRoute />} />
           <Route path="/story/:id" element={<StoryRoute />} />
           <Route path="/studio" element={<StudioPage />} />
+          <Route path="/services" element={<ServicesPage />} />
           <Route path="/how-we-build" element={<BuildPage />} />
           <Route path="/begin" element={<BeginPage />} />
           <Route path="/contact" element={<Navigate to="/begin" replace />} />

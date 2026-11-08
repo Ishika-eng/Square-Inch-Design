@@ -34,6 +34,7 @@ export const NAV = [
   { label: "Worlds", to: "/worlds", photo: "/photos/abstract-01.webp", preview: "Abstract" },
   { label: "Projects", to: "/projects", photo: "/photos/fusion-01.webp", preview: "Fusion" },
   { label: "Studio", to: "/studio", photo: "/photos/traditional-07.webp", preview: "Studio" },
+  { label: "Services", to: "/services", photo: "/photos/rustic-01.webp", preview: "Services" },
   { label: "Process", to: "/how-we-build", photo: "/photos/traditional-01.webp", preview: "Process" },
   { label: "Start a Project", to: "/begin", photo: "/photos/traditional-02.webp", preview: "Begin" },
 ];
@@ -59,6 +60,19 @@ export const VOICES = [
     name: "Adv. Vikram More",
     role: "Lawyer",
   },
+];
+
+// Services page — complete solutions under one roof.
+export const SERVICES = [
+  { n: "01", t: "Architecture & Planning", d: "We provide complete architectural solutions, covering everything from initial concepts, architectural planning and space layouts to detailed design, residential and commercial building planning, and Vastu Shastra-based consultancy." },
+  { n: "02", t: "Interior Designing", d: "We offer complete interior design solutions tailored to each client's personality, preferences, lifestyle, culture, personal interests and budget. From theme development, colour combinations and material selection to furniture, lighting, décor and final execution, we take care of every aspect of interior design." },
+  { n: "03", t: "Landscape Designing", d: "We provide complete landscape design solutions, from outdoor space planning and garden concepts to plantation, aesthetic development and functional landscape execution." },
+  { n: "04", t: "Electrical & Solar Consultancy", d: "We offer complete electrical and solar solutions, including planning, system design, technical consultancy, energy-efficient options and implementation guidance for residential and commercial projects." },
+  { n: "05", t: "Plumbing & Kitchen Consultancy", d: "We provide complete plumbing and kitchen solutions, covering detailed planning, proper layouts, wet and dry area management, fixture selection, functional design and technical coordination." },
+  { n: "06", t: "Residential & Commercial Projects", d: "We offer complete solutions for residential and commercial projects, from initial planning and architectural design to interior development, material selection, technical consultancy and project execution." },
+  { n: "07", t: "Resort & Hospital Consultancy", d: "We provide complete planning and design solutions for resorts and hospitals, considering functionality, space utilisation, user requirements, aesthetics, technical needs and project coordination." },
+  { n: "08", t: "Low-Cost & Sustainable Housing", d: "We specialise in complete affordable and sustainable housing solutions, including mud houses, bamboo houses, steel structures, A-frame structures and modular ready-to-move homes. We guide every stage, from concept and planning to material selection, design and construction solutions." },
+  { n: "09", t: "Building Material & Construction Consultancy", d: "We provide complete construction material consultancy, helping clients select the right materials, fittings and fixtures, from basic to premium ranges, according to their requirements and budget. We also offer sustainable building alternatives, innovative construction techniques and cost-effective design solutions." },
 ];
 
 export const PROCESS = [

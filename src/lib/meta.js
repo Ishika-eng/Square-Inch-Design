@@ -56,6 +56,13 @@ export function metaFor(pathname) {
       noindex: false,
       image: "/photos/traditional-07.webp",
     };
+  if (p === "/services")
+    return {
+      title: `Our Services | ${BASE}`,
+      desc: "Architecture, interiors, landscape, technical consultancy and construction — complete design and build solutions under one roof.",
+      noindex: false,
+      image: "/photos/rustic-01.webp",
+    };
   if (p === "/how-we-build")
     return {
       title: `Our Process | ${BASE}`,

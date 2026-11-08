@@ -360,9 +360,14 @@ function ProcessTease() {
           <p className="text-sm md:text-[15px] leading-relaxed text-ink/60 max-w-xs">
             Six thoughtful steps that turn your vision into spaces that hold time.
           </p>
-          <Link to="/how-we-build" className="w-fit shrink-0 border border-ink/40 px-7 py-3 text-[10px] md:text-[11px] tracking-[0.25em] text-ink transition-colors hover:border-accent hover:text-accent hover:bg-accent/5">
-            FOLLOW THE LINE <span aria-hidden="true" className="ml-2">→</span>
-          </Link>
+          <div className="flex flex-wrap gap-3">
+            <Link to="/services" className="w-fit shrink-0 bg-ink text-bone px-7 py-3 text-[10px] md:text-[11px] tracking-[0.25em] transition-colors hover:bg-accent">
+              OUR SERVICES <span aria-hidden="true" className="ml-2">→</span>
+            </Link>
+            <Link to="/how-we-build" className="w-fit shrink-0 border border-ink/40 px-7 py-3 text-[10px] md:text-[11px] tracking-[0.25em] text-ink transition-colors hover:border-accent hover:text-accent hover:bg-accent/5">
+              FOLLOW THE LINE <span aria-hidden="true" className="ml-2">→</span>
+            </Link>
+          </div>
         </div>
       </div>
 
