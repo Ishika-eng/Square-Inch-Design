@@ -384,7 +384,7 @@ function ProcessTease() {
                   {p.n}
                 </p>
                 <p className="mt-2 text-[10px] tracking-[0.18em] font-medium">{p.t.toUpperCase()}</p>
-                <p className="mt-1.5 max-w-[190px] text-[11px] leading-relaxed text-ink/55">{p.d}</p>
+                <p className="mt-1.5 max-w-[190px] text-[13px] md:text-sm leading-relaxed text-ink/55">{p.d}</p>
               </>
             );
             return (
