@@ -1,0 +1,11 @@
+# Serves index.html for any route that isn't a real file, so links like
+# /studio or /services work on refresh/direct visit (Apache equivalent of
+# the Netlify _redirects rule this project also ships).
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
